@@ -1,0 +1,210 @@
+/* ===== imports =====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* ===== general ===== */
+
+body {
+    background-color: #12130F;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+}
+
+/* ===== container ===== */
+
+.bg_mask {
+    background-color: #12130fd0;
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    background-color: #1a1b19d0;
+    height: 75%;
+    width: 90%;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* ===== navbar ===== */
+
+.le_navbar {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    margin-left: 2%;
+    font-size: 26px;
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+}
+
+li a:hover {
+    margin-left: -25px;
+    padding: 5px 10px 5px 10px;
+    border-left: 3px solid #521820;
+    color: #72222c;
+    font-weight: 200;
+}
+
+.thispage {
+    margin-left: -25px;
+    padding: 5px 10px 5px 10px;
+    border-left: 3px solid #a1888b;
+    color: #a1888b;
+    font-weight: 600;
+}
+
+/* ===== notes ===== */
+
+.dispnotes {
+    display: flex;
+    max-height: 90%;
+    width: 75%;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.note {
+    width: 90%;
+    display: inline-block;
+    margin: 2% 0%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.vert_note {
+    display: flex;
+    max-height: 100%;
+    width: 90%;
+    
+    flex-direction: row;
+    justify-content: center;
+}
+
+.vert_note_elem_norm {
+    width: 90%;
+    display: inline-block;
+    margin: 2% 0%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.vert_note_elem_thicc {
+    width: 300%;
+    display: inline-block;
+    margin: 2% 0%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.title {
+    display: inline;
+    padding: 10px;
+    font-size: 36px;
+    font-style: italic;
+    color: #c08289;
+}
+
+.header_text {
+    display: inline;
+    padding: 10px 20px;
+    font-size: 26px;
+    font-style: italic;
+    color: #72222c;
+}
+
+.homepage_text {
+    padding: 10px 50px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-size: 17px;
+    color: #a1888b;
+}
+
+.q {
+    font-size: 20px;
+    color: rgb(180, 180, 180);
+}
+
+.a {
+    display: inline-block;
+    font-size: 17px;
+    color: #a1888b;
+    margin-left: 5%;
+}
+
+.quote {
+    display: inline-block;
+    margin-left: 15px;
+    border-left: rgb(182, 139, 139) 2px;
+    text-justify: none;
+}
+
+.footnote {
+    padding: 10px 0px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-size: 13px;
+    color: #a1888b;
+}
+
+.break {
+    width: 50%;
+    border: 0;
+    height: 0;
+    border-top: 2px #521820 dotted;
+}
+
+.link {
+    color: #a1888b;
+}
+
+.link:hover {
+    color: #72222c;
+}
+
+.dispnotes::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.dispnotes::-webkit-scrollbar-track {
+    background: #12130fd0;
+    border-radius: 20px        /* color of the tracking area */
+}
+  
+.dispnotes::-webkit-scrollbar-thumb {
+    background-color: #1a1b19d0;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #12130f;  /* creates padding around scroll thumb */
+}

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cssreset.css">
+        <title>yes</title>
+        <link rel="icon" href="img/favicon.ico" type="image/icon type">
+    </head>
+    <body>
+        <div class="cont">
+            <div class="oc">
+                <h1>hello!</h1>
+                <p> i'm sorry if you ever clicked whatever that link below once was <br> 
+                    anyways, I've made adjustments to make this less annoying/confusing <br>
+                    im sorry for the background music before, ok? <br><br>
+
+                    click <span class="yulquen" onclick="togglePlay()">here</span> to play/pause the sound thingy <br><br>
+                    
+                    <a href="sub/home.html">what's this place for?</a>
+                </p>
+            </div>
+            
+            <audio id="mscLP" src="msc/lp.mp3" preload="auto">
+            </audio>
+            <script>
+                var myAudio = document.getElementById("mscLP");
+    
+                function togglePlay() {
+                return myAudio.paused ? myAudio.play() : myAudio.pause();
+                };
+            </script>
+            
+            <script src="js/oc_button.js"></script>
+    
+            <div id="particles-js"></div>
+            <script src="js/particles.js"></script>
+            <script src="js/app.js"></script>
+        </div>
+    </body>
+</html>
